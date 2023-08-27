@@ -37,7 +37,7 @@ class ALATTAR extends StatelessWidget {
        onPressed: () {  },
       ),
       IconButton(
-      icon: Icon(Icons.message,color: Colors.amberAccent,),
+      icon: Icon(Icons.mobile_friendly,color: Colors.amberAccent,),
        onPressed: () {  },
       ),
       ],
@@ -46,9 +46,21 @@ elevation:0 ,
   ),
    
       
-floatingActionButton:FloatingActionButton(onPressed: () {
-     
-   },), );
+floatingActionButton:FloatingActionButton(backgroundColor: Colors.black,
+  onPressed: () {},
+  child: Icon(Icons.add,color: Colors.orange[700],size:38,),
+  ),
+  body:Center(child: Text(
+    "مكتب العطار محاكي لشارع العطار",style: TextStyle(
+  color: Colors.orange,
+  fontSize: 30,
+  fontWeight: FontWeight.w900,
+  fontStyle: FontStyle.italic,
+
+    ),),)
+    
+
+  );
   }
 }
 
